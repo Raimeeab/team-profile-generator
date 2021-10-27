@@ -1,7 +1,7 @@
 // Testing employee constructor
 const { TestWatcher } = require("jest");
 const Employee = require("../lib/employee");
-const employee = require("../lib/employee");
+
 
 describe("Employee", () => {
     it("Should create Employee constructor", () => {
