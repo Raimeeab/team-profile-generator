@@ -7,21 +7,21 @@ describe("Employee", () => {
     it("Should create Employee constructor", () => {
         const employee = new Employee("Raimee Abbassi", 707, "raimeeab@gmail.com");
 
-        expect(typeof(employee).toEqual("object"))
+        expect(typeof(Employee).toEqual("object"))
     });
 
     it("Should create name in employee constructor param", () => {
         const name = "Raimee Abbassi";
-        const employeeName = new employee(name);
+        const employeeName = new Employee(name);
         
-        expect(employee.name).toEqual(name);
+        expect(Employee.name).toEqual(name);
     });
 
     it("Should create employee ID in constructor param", () => {
         const testId = 707;
-        const employeeId = new employee("Raimee Abbassi", testId);
+        const employeeId = new Employee("Raimee Abbassi", testId);
     
-        expect(typeof(employee.id).toBe("Number"));
-        expect(employee.id).toEqual(id);
+        expect(typeof(Employee.id).toBe("Number"));
+        expect(Employee.id).toEqual(id);
     });
 });
