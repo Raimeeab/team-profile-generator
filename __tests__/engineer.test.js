@@ -1,4 +1,4 @@
-const engineer = require("../lib/engineer");
+const Engineer = require("../lib/engineer");
 
 describe("Engineer", () => {
     it("getGitHub method", () => {
@@ -10,7 +10,7 @@ describe("Engineer", () => {
 
     it("getRole method", () => {
         const role = "Engineer";
-        const engineer = new Engineer("Raimee Abbassi", 707, "raimeeab@gmail.com", github);
+        const engineer = new Engineer("Raimee Abbassi", 707, "raimeeab@gmail.com");
 
         expect(engineer.getRole()).toEqual(role);
     })
