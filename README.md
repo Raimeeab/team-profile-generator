@@ -1,5 +1,4 @@
-<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/pulls/detail/state/Raimeeab/profile-generator">  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed-raw/Raimeeab/profile-generator">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/profile-generator/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
-
+<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/profile-generator/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
 
 # PROJECT NAME
 ---
@@ -47,7 +46,7 @@ Use Unit Testing with Jest.
 ## 🔖 License
 
 MIT License
-Copyright (c) [2021] [<reponame>]
+Copyright (c) [2021] [profile-generator]
 Permission is herby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limiation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject following coditions: 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. 
 
