@@ -1,4 +1,4 @@
-<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/<reponame>">  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/pulls/detail/state/Raimeeab/<reponame>">  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed-raw/Raimeeab/<reponame>">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/<reponame>/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/<reponame>">
+<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="GitHub Pull Requests" src="https://img.shields.io/github/pulls/detail/state/Raimeeab/profile-generator">  <img alt="GitHub Closed Issues" src="https://img.shields.io/github/issues-closed-raw/Raimeeab/profile-generator">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/profile-generator/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
 
 
 # PROJECT NAME
@@ -9,30 +9,33 @@
 * [Technlogies](#technologies)
 * [Usage](#usage)
 * [Installation](#installation)
+* [Testing](#testing)
 * [Contributors](#contributors)
 * [License](#license)
 * [Contribution](#contribution)
 * [Questions](#questions)
 
-### Demo
-![main-demo]()
-
 <a name="description"></a>
 ## 📝 Description
 
-Link to the [site]()
 
 <a name="technologies"></a>
 ## 🕹 Technologies used 
 
+- JavaScript
+- Node.js
+- Inquirer
+- Jest testing
 
 <a name="installation"></a>
 ## ⚙️ Installation 
 
-
 <a name="usage"></a>
 ## 🖥 Usage 
 
+<a name="testing"></a>
+## 🎛 Testing
+Use Unit Testing with Jest.
 
 <a name="contributors"></a>
 ## 👥 Contributors
