@@ -7,7 +7,6 @@ const path = require("path");
 const generatePage = require("./src/generateHTML");
 
 // Team profiles
-const employee = require("./lib/employee");
 const engineer = require("./lib/engineer");
 const intern = require("./lib/intern");
 const manager = require("./lib/manager");
@@ -19,11 +18,24 @@ const teamMembers = [];
 const userPrompts = [
     {
         type: "input",
-        name: "manager",
-        message: "Manager of team:",
+        name: "name",
+        message: "Employee name:",
         // validate: ""
     },
     {
-
+        type: "input",
+        name: "id",
+        message: "Employee id:",
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Employee email:",
+    },
+    {
+        type: "list",
+        name: "role",
+        message: "Employee role:",
+        choices: ["Manager", "Engineer", "Intern"]
     }
-]
+];
