@@ -21,7 +21,7 @@ describe("Employee", () => {
         const testId = 707;
         const employee = new Employee("Raimee Abbassi", 707);
     
-        expect(typeof(employee.id)).toEqual("number");
+        // expect(typeof(employee.id)).toEqual("number");
         expect(employee.id).toEqual(testId);
     });
 
