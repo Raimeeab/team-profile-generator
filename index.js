@@ -23,7 +23,7 @@ function buildMembers() {
     // pass three prams to the erndorer and creating file
     let html = generateHTML(managerInfo, engineerInfo, internInfo)
 
-    //fs.writeFile()
+    fs.writeFile("./dist/index.html", html)
 
 };
 

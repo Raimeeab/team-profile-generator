@@ -1,0 +1,40 @@
+:root {
+    --background-colour: #dcdcdd;
+    --header-colour: #358DC0;
+    --primary-text-colour: #46494C;
+    --secondary-text-colour: #4C5C68;
+}
+
+::selection {
+    background-color: var(--primary-text-colour);
+    color: var(--background-colour);
+}
+
+/* --- Element Selectors --- */
+
+body {
+    font-family: 'Roboto Condensed','Helvetica Neue','Helvetica','Arial', sans-serif;
+    line-height: 1.5;
+    color: var(--primary-text-colour);
+    background-color: var(--background-colour);
+}
+
+/* --- Class Selectors --- */
+
+.header {
+    background-color: var(--header-colour);
+    color: black;
+    font-weight: bolder;
+}
+
+.role {
+    color: var(--header-colour);
+}
+
+.icon {
+    color: black;
+}
+
+.card {
+    margin: 15px;
+}
