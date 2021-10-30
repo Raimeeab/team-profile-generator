@@ -1,4 +1,5 @@
 const generateHTML = (manager, engineers, interns) => {
+    console.log("generateHTML => engineers:" + engineers);
     // console.log(manager, engineer, intern) 
     // const generateManager = (manager) =>{
     //     return `<li>${intern.getId} </>`
@@ -21,6 +22,7 @@ const generateHTML = (manager, engineers, interns) => {
     </div>
 </div>`
     engineers.foreach( (engineer) => {
+        console.log("generateHTML => engineer:" + engineer);
         // will create a new card for every element insdie engineer array
         html += `
 <!-- Engineer card(s) -->

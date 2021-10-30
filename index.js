@@ -16,9 +16,9 @@ let engineerInfo = [];
 let internInfo = [];
 
 function buildMembers() {
-    console.log(managerInfo);
-    console.log(engineerInfo);
-    console.log(internInfo);
+    console.log("index.js => managerInfo" + managerInfo);
+    console.log("index.js => egineerInfo" + engineerInfo);
+    console.log("index.js => internInfo" + internInfo);
 
     // pass three prams to the erndorer and creating file
     let html = generateHTML(managerInfo, engineerInfo, internInfo)
