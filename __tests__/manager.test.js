@@ -5,7 +5,7 @@ describe("Manager", () => {
         const officenumber = 123405050;
         const manager = new Manager("Raimee Abbassi", 707, "raimeeab@gmail.com", officenumber);
 
-        expect(manager.officenumber).toEqual(officenumber);
+        expect(manager.getOfficeNum()).toEqual(officenumber);
     });
 
     it("getRole method", () => {

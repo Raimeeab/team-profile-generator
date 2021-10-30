@@ -1,10 +1,5 @@
 const generateHTML = (manager, engineers, interns) => {
-    console.log("generateHTML => engineers:" + engineers);
-    // console.log(manager, engineer, intern) 
-    // const generateManager = (manager) =>{
-    //     return `<li>${intern.getId} </>`
-    // }
-
+   
     let html = "";
     html += `
 <!-- Manager card -->
@@ -16,13 +11,12 @@ const generateHTML = (manager, engineers, interns) => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${manager[0].id}</li>
-            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${manager[0].name}">${manager[0].name}</a></li>
+            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${manager[0].email}">${manager[0].email}</a></li>
             <li class="list-group-item"><i class="fas fa-phone-alt" aria-hidden="true"></i> Office number: <a href="tel:${manager[0].officenumber} target="_blank">${manager[0].officenumber}</a></li>
         </ul>
     </div>
 </div>`
-    engineers.foreach( (engineer) => {
-        console.log("generateHTML => engineer:" + engineer);
+    engineers.forEach( (engineer) => {
         // will create a new card for every element insdie engineer array
         html += `
 <!-- Engineer card(s) -->
@@ -34,13 +28,13 @@ const generateHTML = (manager, engineers, interns) => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${engineer.id}</li>
-            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${engineer.name}">${engineer.name}</a></li>
-            <li class="list-group-item"><i class="fab fa-github"></i> GitHub Username: ${engineer.github}</li>
+            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${engineer.email}">${engineer.email}</a></li>
+            <li class="list-group-item"><i class="fab fa-github"></i> GitHub Username: <a href="https://github.com/${engineer.github}">${engineer.github}</a></li>
         </ul>
     </div>
 </div>`
     });
-    interns.foreach( (intern) => {
+    interns.forEach( (intern) => {
         html += `
 <!-- Intern card(s) -->
 <div class="card">
@@ -51,7 +45,7 @@ const generateHTML = (manager, engineers, interns) => {
     <div class="card-body">
         <ul class="list-group">
             <li class="list-group-item">ID: ${intern.id}</li>
-            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${intern.name}">${intern.name}</a></li>
+            <li class="list-group-item"><i class="far fa-envelope" aria-hidden="true"></i> Email: <a href="mailto:${intern.email}">${intern.email}</a></li>
             <li class="list-group-item"><i class="fas fa-graduation-cap"></i> School: ${intern.school}</li>
         </ul>
     </div>

@@ -16,14 +16,16 @@ let engineerInfo = [];
 let internInfo = [];
 
 function buildMembers() {
-    console.log("index.js => managerInfo" + managerInfo);
-    console.log("index.js => egineerInfo" + engineerInfo);
-    console.log("index.js => internInfo" + internInfo);
 
-    // pass three prams to the erndorer and creating file
+    // Parse data into function arguments
     let html = generateHTML(managerInfo, engineerInfo, internInfo)
-
-    fs.writeFile("./dist/index.html", html)
+    fs.writeFile("./dist/index.html", html, (err) => {
+        if (err)
+          console.log(err);
+        else {
+          console.log("File written successfully\n");
+        }
+      });
 
 };
 
@@ -32,12 +34,19 @@ const managerPrompts = [
         type: "input",
         name: "name",
         message: "Manager name:",
-        // validate: ""
     },
     {
         type: "input",
         name: "id",
         message: "Manager id:",
+        // validate: (value) => {
+        //     if(isNaN(value)){
+        //         return true;
+        //     } else {
+        //         console.log("Please enter a number.");
+        //         return false;
+        //     }
+        // }
     },
     {
         type: "input",
@@ -46,24 +55,24 @@ const managerPrompts = [
     },
     {
         type: "input",
-        name: "office number",
+        name: "officenumber",
         message: "Office number:",
     },
 ];
 
 
 
-function appChoices() { 
+function addRole() { 
     inquirer.prompt([
         {
             type: "list",
-            name: "team",
+            name: "role",
             choices: ["Engineer", "Intern", "Complete"]
         }
     ]).
     then((choices) => {
         // Each choice will lead to a different function 
-        switch(choices.team) {
+        switch(choices.role) {
             case "Engineer": 
                 addEngineer();
                 break;
@@ -77,7 +86,6 @@ function appChoices() {
 }
 
 function addEngineer() {
-    console.log("working");
     inquirer.prompt([
         {
             type: "input",
@@ -103,7 +111,7 @@ function addEngineer() {
     ]).then((engineerAns) => {
         let engineer = new Engineer(engineerAns.name, engineerAns.id, engineerAns.email, engineerAns.github);
         engineerInfo.push(engineer);
-        appChoices();
+        addRole();
     })
 
 }
@@ -134,7 +142,7 @@ function addIntern() {
     ]).then((internAns) => {
         let intern = new Intern(internAns.name, internAns.id, internAns.email, internAns.school);
         internInfo.push(intern);
-        appChoices();
+        addRole();
     });
 
 }
@@ -150,7 +158,7 @@ inquirer.prompt(managerPrompts).then((managerAns) => {
     // create a new instance of manager 
     let manager = new Manager(managerAns.name, managerAns.id, managerAns.email, managerAns.officenumber);
     managerInfo.push(manager);
-    appChoices();
+    addRole();
 });
 }
 
