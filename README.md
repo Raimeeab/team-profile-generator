@@ -32,7 +32,7 @@ This app generates a webage that displays your team project's basic information,
 
 1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
 
-<!-- ENTER GIT CLONE GIF HERE  -->
+![git-clone](./lib/demos/git-clone.gif)
 
 2. In order for the app to function correctly, ensure you have the latest or most stable version of Node.js and that you've run:
     - `npm install`
