@@ -1,4 +1,4 @@
-<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="Branch Check Main" src="https://img.shields.io/github/checks-status/RaimeeAb/profile-generator/main">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
+<img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
 
 # PROJECT NAME
 ---
@@ -16,7 +16,7 @@
 
 <a name="description"></a>
 ## 📝 Description
-
+This app generates a webage that displays your team project's basic information, with links to their emails, GitHub profiles and other relevant information using a command-line application. This project has taught me how to implement unit testing to ensure that the codes functionality is operating correctly. 
 
 <a name="technologies"></a>
 ## 🕹 Technologies used 
@@ -28,13 +28,32 @@
 
 <a name="installation"></a>
 ## ⚙️ Installation 
+*You can find a step-by-step tutorial [here](ENTER LINK TO VIDEO HERE)*
+
+1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
+
+<!-- ENTER GIT CLONE GIF HERE  -->
+
+2. In order for the app to function correctly, ensure you have the latest or most stable version of Node.js and that you've run:
+    - `npm install`
+
+<!-- ENTER INSTALL GIF HERE  -->
+
+3. Run `node index.js` and follow the prompts that run on your terminal. This will then generate your very own README file for your project. 
+
+<!-- ENTER COMMAND LINE PIC HERE  -->
 
 <a name="usage"></a>
 ## 🖥 Usage 
+Follow the installation steps above to generate your webpage by entering the required information through the command-line terminal. 
+- If you wish to do multiple webpages, please keep in mind that the file will overwrite itself if the file name is the same. The default name is "index.html".
+- If you do not have all the information needed at the time of creating the app, simply keep those prompts empty and add them directly in your HTML file at a later time. 
 
 <a name="testing"></a>
 ## 🎛 Testing
 Use Unit Testing with Jest.
+
+<!-- ENTER GIF TO SHOW TESTING -->
 
 <a name="contributors"></a>
 ## 👥 Contributors

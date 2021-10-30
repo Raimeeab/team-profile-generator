@@ -15,11 +15,8 @@ let managerInfo = [];
 let engineerInfo = [];
 let internInfo = [];
 
-// Check to see if index.html file already exists 
-
-// import {read, close} from 'fs';
-
-const check = () => {
+// Start app & check to see if index.html file already exists 
+const init = () => {
     if(fs.existsSync('./dist/index.html')) {
         inquirer.prompt(
             {
@@ -29,36 +26,15 @@ const check = () => {
             }).then(async(response) => {
                 let overwrite = response.overwrite;
                 if (await overwrite === true) {
-                    init();
+                    userPrompts();
                 } else if (await overwrite === false) {
                     console.log("Type 'Ctrl + C' to quit");
-            };
-        });
+                };
+         });
     } else { 
-        init();
+        userPrompts();
     };
 };
-// fs.existsSync('./dist/index.html', (err) => {
-//     if (err) 
-//         init();
-//     else {
-//         inquirer.prompt({
-//             type: "list",
-//             name: "overwrite",
-//             message: "It seems 'index.html' already exists, should you continue your existing file will be overwritten.",
-//             choices: ["Continue", "Quit"],
-//         }).then((choices) => {
-//             switch(choices.overwrite) {
-//                 case "Continue":
-//                     init();
-//                     break;
-//                 case "Quit":
-//                     console.log("Type 'Ctrl + C' to quit")
-//             }
-//         })
-//     }
-
-// })
 
 // Build index.html file
 function buildHTML() {
@@ -172,14 +148,6 @@ const managerPrompts = [
         type: "input",
         name: "id",
         message: "Manager id:",
-        // validate: (value) => {
-        //     if(isNaN(value)){
-        //         return true;
-        //     } else {
-        //         console.log("Please enter a number.");
-        //         return false;
-        //     }
-        // }
     },
     {
         type: "input",
@@ -193,7 +161,7 @@ const managerPrompts = [
     },
 ];
 
-function init(){
+function userPrompts(){
     console.log(`-------------------------------------
     THE PROFESSIONAL TEAM PROFILE GENERATOR.
     
@@ -208,3 +176,4 @@ inquirer.prompt(managerPrompts).then((managerAns) => {
 });
 }
 
+init()
