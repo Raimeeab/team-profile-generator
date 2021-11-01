@@ -1,6 +1,6 @@
 <img alt="GitHub Followers" src="https://img.shields.io/github/followers/Raimeeab"> <img alt="GitHub License" src="https://img.shields.io/apm/l/vim-mode">  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/Raimeeab/profile-generator">  <img alt="GitHub Commit Activity" src="https://img.shields.io/github/commit-activity/w/Raimeeab/profile-generator">
 
-# PROJECT NAME
+# Team Profile Generator
 ---
 ## Table of Content 
 
@@ -21,10 +21,12 @@ This app generates a webage that displays your team project's basic information,
 <a name="technologies"></a>
 ## 🕹 Technologies used 
 
+- HTML
+- Bootstrap
 - JavaScript
 - Node.js
 - Inquirer
-- Jest testing
+- Jest Unit Testing
 
 <a name="installation"></a>
 ## ⚙️ Installation 
@@ -32,16 +34,16 @@ This app generates a webage that displays your team project's basic information,
 
 1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
 
-![git-clone](./lib/demos/git-clone.gif)
+![git-clone](./dist/demos/git-clone.gif)
 
 2. In order for the app to function correctly, ensure you have the latest or most stable version of Node.js and that you've run:
     - `npm install`
 
-<!-- ENTER INSTALL GIF HERE  -->
+![install](./dist/demos/install.gif)
 
 3. Run `node index.js` and follow the prompts that run on your terminal. This will then generate your very own README file for your project. 
 
-<!-- ENTER COMMAND LINE PIC HERE  -->
+![user-prompts](./dist/demos/userprompts.jpg)
 
 <a name="usage"></a>
 ## 🖥 Usage 
@@ -51,7 +53,10 @@ Follow the installation steps above to generate your webpage by entering the req
 
 <a name="testing"></a>
 ## 🎛 Testing
-Use Unit Testing with Jest.
+Use Unit Testing with Jest: 
+- You can run `npm run test` or `npm run watch` 
+
+![testing](./dist/demos/testing.gif)
 
 <!-- ENTER GIF TO SHOW TESTING -->
 
