@@ -19,6 +19,14 @@ body {
     background-color: var(--background-colour);
 }
 
+a {
+    color: var(--header-colour);
+}
+
+a:hover {
+    color: var(--secondary-text-colour);
+}
+
 /* --- Class Selectors --- */
 
 .header {
@@ -36,5 +44,7 @@ body {
 }
 
 .card {
+    width: 100%;
+    height: auto;
     margin: 15px;
 }

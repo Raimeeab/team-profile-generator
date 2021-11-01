@@ -54,11 +54,9 @@ Follow the installation steps above to generate your webpage by entering the req
 <a name="testing"></a>
 ## 🎛 Testing
 Use Unit Testing with Jest: 
-- You can run `npm run test` or `npm run watch` 
+- Run `npm run test` in your terminal
 
 ![testing](./dist/demos/testing.gif)
-
-<!-- ENTER GIF TO SHOW TESTING -->
 
 <a name="contributors"></a>
 ## 👥 Contributors
