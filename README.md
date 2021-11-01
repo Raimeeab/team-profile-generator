@@ -44,7 +44,7 @@ This app generates a webage that displays your team project's basic information,
 
 3. Run `node index.js` and follow the prompts that run on your terminal. This will then generate your very own README file for your project. 
 
-![user-prompts](./dist/demos/userprompts.jpg)
+![user-prompts](./dist/demos/userprompt.jpg)
 
 <a name="usage"></a>
 ## 🖥 Usage 
