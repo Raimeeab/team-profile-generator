@@ -30,7 +30,7 @@ This app generates a webage that displays your team project's basic information,
 
 <a name="installation"></a>
 ## ⚙️ Installation 
-*You can find a step-by-step tutorial [here](ENTER LINK TO VIDEO HERE)*
+*You can find a step-by-step tutorial [here](https://github.com/Raimeeab/team-profile-generator/blob/main/dist/demos/Walkthrough.mov)*
 
 1. Git clone this repository onto your local machine and navigate to the file on your terminal. *This can also be done by opening the file on Visual Studios and running it through the intergated terminal.*
 
